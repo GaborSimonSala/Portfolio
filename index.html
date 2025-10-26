@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gábor Simon - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo"></div>
+        <div class="nav-menu" id="nav-menu">
+            <a href="#home" class="nav-link">Hello</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#examples" class="nav-link">Examples</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="highlight">Gábor Simon</span>
+            </h1>
+            <p class="hero-subtitle">Software Developer & Technology Enthusiast</p>
+            <p class="hero-description">
+                Passionate about creating innovative solutions and delivering exceptional results.
+                Experienced in modern web technologies and software development.
+            </p>
+            <div class="hero-buttons">
+                <a href="#examples" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="sticker-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Hello_my_name_is_sticker.svg"
+                     alt="Hello my name is sticker"
+                     class="sticker-image">
+                <div class="sticker-overlay">
+                    <div class="sticker-name">
+                        <span class="name-text">Gábor</span>
+                    </div>
+                    <div class="sticker-role">
+                        <span class="role-text">Software Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Me (WIP)</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I am a dedicated professional with a passion for technology and innovation.
+                    My experience spans across various domains, and I'm committed to continuous learning
+                    and delivering high-quality solutions.
+                </p>
+                <p>
+                    I believe in the power of technology to solve real-world problems and am always
+                    excited to work on challenging projects that make a difference.
+                </p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <h3>25</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="experience">
+    <div class="container">
+        <h2 class="section-title">Professional Experience (TEMPLATE)</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Senior Developer</h3>
+                    <h4>Company Name</h4>
+                    <span class="timeline-date">2022 - Present</span>
+                    <p>Leading development of enterprise applications and mentoring junior developers.
+                        Responsible for architecture decisions and code quality.</p>
+                    <ul>
+                        <li>Developed scalable web applications</li>
+                        <li>Led a team of 5 developers</li>
+                        <li>Improved system performance by 40%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Full Stack Developer</h3>
+                    <h4>Previous Company</h4>
+                    <span class="timeline-date">2020 - 2022</span>
+                    <p>Developed full-stack applications using modern technologies.
+                        Collaborated with cross-functional teams to deliver high-quality products.</p>
+                    <ul>
+                        <li>Built responsive web applications</li>
+                        <li>Implemented RESTful APIs</li>
+                        <li>Optimized database queries</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Junior Developer</h3>
+                    <h4>Startup Company</h4>
+                    <span class="timeline-date">2019 - 2020</span>
+                    <p>Started my professional journey as a junior developer,
+                        learning best practices and contributing to various projects.</p>
+                    <ul>
+                        <li>Learned modern development frameworks</li>
+                        <li>Contributed to team projects</li>
+                        <li>Participated in code reviews</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <div class="container">
+        <h2 class="section-title">Skills & Technologies (TEMPLATE)</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>HTML5</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="82%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>Git</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Docker</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>AWS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Linux</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Examples Section -->
+<section id="examples" class="examples">
+    <div class="container">
+        <h2 class="section-title">Examples</h2>
+        <div class="examples-grid">
+            <div class="example-card">
+                <div class="example-image">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="example-content">
+                    <h3>MatrixMatch</h3>
+                    <p>A Tetris-like game with a twist and worldwide leaderboard.</p>
+                    <div class="example-tech">
+                        <span>Unity</span>
+                        <span>WebGL</span>
+                        <span>MongoDB</span>
+                        <span>Stripe</span>
+                    </div>
+                    <div class="example-links">
+                        <a href="#" class="btn btn-outline">Live Demo</a>
+                        <a href="https://github.com/BONOBOGAMES/MatrixMatch" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="example-card">
+                <div class="example-image">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="example-content">
+                    <h3>Mobile Task Manager (TEMPLATE)</h3>
+                    <p>A responsive task management application with real-time collaboration features and offline
+                        support.</p>
+                    <div class="example-tech">
+                        <span>React Native</span>
+                        <span>Firebase</span>
+                        <span>Redux</span>
+                    </div>
+                    <div class="example-links">
+                        <a href="#" class="btn btn-outline">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="example-card">
+                <div class="example-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="example-content">
+                    <h3>Analytics Dashboard (TEMPLATE)</h3>
+                    <p>A comprehensive analytics platform with data visualization, reporting, and real-time
+                        monitoring.</p>
+                    <div class="example-tech">
+                        <span>Vue.js</span>
+                        <span>Python</span>
+                        <span>D3.js</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="example-links">
+                        <a href="#" class="btn btn-outline">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>I'm always interested in new opportunities and exciting projects.
+                    Feel free to reach out if you'd like to collaborate!</p>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <a class="contact-link" href="https://bonobo.games" target="_blank">
+                            <i class="fas fa-globe"></i>
+                            <span>bonobo.games</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a class="contact-link" href="https://www.linkedin.com/in/gaborsimonsala" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>gaborsimonsala</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a class="contact-link" href="https://github.com/GaborSimonSala" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GaborSimonSala</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a class="contact-link" href="https://x.com/Sala_HUN" target="_blank">
+                            <i class="fab fa-x-twitter"></i>
+                            <span>Sala_HUN</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a class="contact-link" href="https://discord.com/users/SalaHUN" target="_blank">
+                            <i class="fab fa-discord"></i>
+                            <span>SalaHUN</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a class="contact-link" href="https://maps.app.goo.gl/1eJkStkh1s7s4PeEA" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sopron, Hungary</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name"></label><input type="text" id="name" name="name" placeholder="Your Name"
+                                                         required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"></label><input type="email" id="email" name="email" placeholder="Your Email"
+                                                          required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject"></label><input type="text" id="subject" name="subject"
+                                                            placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"></label><textarea id="message" name="message" placeholder="Your Message"
+                                                               rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2025 Gábor Simon. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gaborsimonsala/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/GaborSimonSala" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/Sala_HUN" class="social-link" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://discord.com/users/SalaHUN" class="social-link" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<button type="button" class="scroll-to-top" aria-label="Scroll to top" title="Back to top"><i
+        class="fas fa-arrow-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>
